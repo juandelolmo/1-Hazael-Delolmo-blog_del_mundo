@@ -1,9 +1,15 @@
 body {
-    background-color: black;
-    color: #FFFFFF;
+  background-color: black;
+  color: #ffffff;
 }
 
 article {
+  background-color: rgb(44, 43, 43);
+}
+
+.resaltado {
+  color: yellow;
+}
     background-color: rgb(44, 43, 43);
 }
 
