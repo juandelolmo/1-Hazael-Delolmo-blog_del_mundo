@@ -4,14 +4,12 @@ body {
 }
 
 article {
-<<<<<<< HEAD
   background-color: rgb(44, 43, 43);
 }
 
 .resaltado {
   color: yellow;
 }
-=======
     background-color: rgb(44, 43, 43);
 }
 
@@ -24,4 +22,3 @@ article {
     text-align: center;
     font-size: 3rem;
 }
->>>>>>> e341f665c634b3e5e032ba2beb240463829c1290
