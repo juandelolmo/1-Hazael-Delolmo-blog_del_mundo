@@ -4,5 +4,15 @@ body {
 }
 
 article {
-    background-color:rgb(44, 43, 43);
+    background-color: rgb(44, 43, 43);
+}
+
+.Biotecnologia {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.Dilemainteligencias {
+    text-align: center;
+    font-size: 3rem;
 }
