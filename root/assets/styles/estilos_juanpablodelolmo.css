@@ -7,12 +7,11 @@ article {
   background-color: rgb(44, 43, 43);
 }
 
-.Economiamx {
-  text-align: center;
-  font-size: 3rem;
+.resaltado {
+  color: yellow;
 }
 
-.Lineasdedistribucion {
+#titulo_del_blog {
   text-align: center;
   font-size: 3rem;
 }
