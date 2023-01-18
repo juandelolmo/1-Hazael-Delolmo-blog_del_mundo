@@ -5,6 +5,8 @@ body {
 
 article {
   background-color: rgb(44, 43, 43);
+  border-bottom: solid #fff 1px;
+  padding: 1.5rem;
 }
 
 .resaltado {
@@ -14,4 +16,27 @@ article {
 #titulo_del_blog {
   text-align: center;
   font-size: 3rem;
+}
+
+.ilustracion {
+  border: solid #fff 4px;
+  display: inline-block;
+}
+
+.ilustracion figcaption {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+#footer_blog {
+  margin: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
 }
