@@ -5,6 +5,8 @@ body {
 
 article {
   background-color: rgb(44, 43, 43);
+  border-bottom: solid #fff 1px;
+  padding: 1.5rem;
 }
 
 .resaltado {
@@ -14,4 +16,55 @@ article {
 #titulo_del_blog {
   text-align: center;
   font-size: 3rem;
+}
+
+.ilustracion {
+  border: solid #fff 4px;
+  display: inline-block;
+}
+
+.ilustracion img {
+  height: 350px;
+  width: auto;
+}
+
+.ilustracion figcaption {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-style: italic;
+}
+
+#footer_blog {
+  margin: 2rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  gap: 3rem;
+}
+
+section header {
+  grid-column: span 12;
+}
+
+section main {
+  grid-column: span 8;
+}
+
+section aside {
+  grid-column: span 4;
+}
+
+section footer {
+  grid-column: span 12;
 }
