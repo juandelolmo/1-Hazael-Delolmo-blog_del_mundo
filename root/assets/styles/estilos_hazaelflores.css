@@ -1,6 +1,9 @@
 body {
   background-color: black;
   color: #ffffff;
+  animation-name: efect_1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 article {
@@ -24,7 +27,7 @@ article {
 }
 
 .ilustracion img {
-  height: 350px;
+  height: 380px;
   width: auto;
 }
 
@@ -36,6 +39,27 @@ article {
 
 #footer_blog {
   margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem, 0;
+  font-size: 1.3rem;
+}
+
+#footer_blog div:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+nav {
+  font-size: 1.3rem;
+  border-bottom: solid #fff 5px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 0.5rem;
 }
 
 nav ul li {
@@ -44,6 +68,22 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: greenyellow;
+}
+
+@keyframes efect_1 {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 section {
@@ -67,4 +107,39 @@ section aside {
 
 section footer {
   grid-column: span 12;
+}
+
+article header hgroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article header hgroup h2 {
+  display: flex;
+  align-items: center;
+}
+
+article header hgroup h2 img {
+  margin-right: 1rem;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+aside div:nth-child(even) {
+  background-color: rgb(44, 43, 43);
+}
+
+aside div {
+  display: flex;
+  align-items: center;
+  border-bottom: dashed #fff 1px;
+  padding: 1rem;
+}
+
+aside img {
+  margin-right: 15px;
 }
