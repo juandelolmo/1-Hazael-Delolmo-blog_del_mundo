@@ -1,6 +1,7 @@
 body {
-  background-color: black;
+  background-color: #000;
   color: #ffffff;
+  margin: 0;
   animation-name: efect_1;
   animation-duration: 3s;
   animation-iteration-count: 1;
@@ -17,6 +18,7 @@ article {
 }
 
 #titulo_del_blog {
+  padding-top: 6rem;
   text-align: center;
   font-size: 3rem;
 }
@@ -24,11 +26,6 @@ article {
 .ilustracion {
   border: solid #fff 4px;
   display: inline-block;
-}
-
-.ilustracion img {
-  height: 380px;
-  width: auto;
 }
 
 .ilustracion figcaption {
@@ -52,7 +49,16 @@ article {
 
 nav {
   font-size: 1.3rem;
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav-bottom {
   border-bottom: solid #fff 5px;
+  animation-name: efect_2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 nav ul {
@@ -71,9 +77,18 @@ nav ul li a {
   color: #fff;
 }
 
-nav ul li a:hover {
-  text-decoration: underline;
-  color: greenyellow;
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: greenyellow;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
 }
 
 @keyframes efect_1 {
@@ -83,6 +98,16 @@ nav ul li a:hover {
 
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes efect_2 {
+  0% {
+    transform: translate3d(-1500px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(0, 0px, 0px);
   }
 }
 
@@ -97,15 +122,15 @@ section header {
   grid-column: span 12;
 }
 
-section main {
+main {
   grid-column: span 8;
 }
 
-section aside {
+aside {
   grid-column: span 4;
 }
 
-section footer {
+footer {
   grid-column: span 12;
 }
 
@@ -136,10 +161,12 @@ aside div:nth-child(even) {
 aside div {
   display: flex;
   align-items: center;
-  border-bottom: dashed #fff 1px;
-  padding: 1rem;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.6rem;
+  border-bottom: 1px dashed #fff;
 }
 
 aside img {
-  margin-right: 15px;
+  margin-left: 15px;
 }
