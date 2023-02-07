@@ -2,6 +2,13 @@ body {
   background-color: black;
   color: #ffffff;
 }
+nav ul li{
+  list-style: none;
+}
+
+nav ul li a{
+text-decoration: none;
+}
 
 article {
   background-color: rgb(44, 43, 43);
