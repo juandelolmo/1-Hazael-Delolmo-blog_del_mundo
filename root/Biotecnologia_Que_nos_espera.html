@@ -671,6 +671,69 @@
           >
         </div>
         <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span
+            >No me parece que anden dando información que no es cierta, han
+            perdido un seguidor</span
+          >
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span
+            >Soy estudiante universitario y quiero decir que este blog impulsó
+            mi carrera en ingenieria en biotecnología. Muchas gracias.</span
+          >
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>Un saludo 👋</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span
+            >Creo que le falta información ¡Debería estar más completo!</span
+          >
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>¿Cada cuando suben contenido?</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
       </aside>
       <!-- Termina Barra Lateral -->
 
@@ -693,5 +756,33 @@
       <!-- Termina el footer -->
     </section>
     <!-- Termina mi blog -->
+
+    <div onclick="ScrollToTop()" class="ScrollTop" id="TopFunction">
+      Go to Top
+    </div>
+
+    <script>
+      function ScrollToTop() {
+        window.scrollTo(0, 0);
+      }
+
+      let mybutton = document.getElementById("TopFunction");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          mybutton.style.display = "inline-block";
+          mybutton.style.opacity = "1";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

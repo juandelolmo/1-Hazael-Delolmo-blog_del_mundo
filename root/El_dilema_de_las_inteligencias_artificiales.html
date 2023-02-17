@@ -311,8 +311,8 @@
             <!-- Inicia Video -->
 
             <iframe
-              height="auto"
-              width="auto"
+              height="400px"
+              width="700px"
               src="https://www.youtube.com/embed/BOD9dJYdHYo"
               title="Le puse mi CARA a ELON MUSK con IA | Parte 1: LA TEORÍA"
               frameborder="0"
@@ -459,18 +459,16 @@
           </header>
           <!-- inicia contenido del artículo -->
           <div>
-            <figure class="ilustracion">
-              <iframe
-                height="auto"
-                width="auto"
-                src="https://www.youtube.com/embed/Q8z3_DIcZkU"
-                title="¿Las inteligencias artificiales están cerca de dominar al mundo?"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-              <figcaption>Luis Hazael Flores 25/03/2022</figcaption>
-            </figure>
+            <iframe
+              height="400px"
+              width="700px"
+              src="https://www.youtube.com/embed/Q8z3_DIcZkU"
+              title="¿Las inteligencias artificiales están cerca de dominar al mundo?"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <figcaption>Luis Hazael Flores 25/03/2022</figcaption>
           </div>
           <footer>
             <!-- Datos del autor -->
@@ -583,6 +581,58 @@
                 enero). OpenAI. Recuperado 31 de enero de 2023, de
                 https://openai.com/blog/chatgpt/
               </p>
+            </blockquote>
+            <!-- fin bibliografía -->
+          </footer>
+        </article>
+        <!-- fin entrada: Tema Libre -->
+
+        <!-- inicia entrada: Tema Libre -->
+        <article>
+          <header>
+            <hgroup>
+              <!-- Título del artículo con ícono -->
+              <h2>
+                <img
+                  src="assets/images/ai.png"
+                  alt="Humano IA"
+                  height="35px"
+                  width="auto"
+                />
+                Meme
+              </h2>
+              <!-- Fecha en la que se escribió el artículo -->
+              <h4>16/02/23</h4>
+            </hgroup>
+          </header>
+          <!-- inicia contenido del artículo -->
+          <div>
+            <!-- inicia ilustración del artículo -->
+            <figure class="ilustracion">
+              <img
+                src="assets/images/Meme ia.png"
+                alt="ilustracion chat GPT"
+                height="auto"
+                width="100%"
+              />
+              <figcaption>Meme sobre Inteligencia Artificial</figcaption>
+            </figure>
+            <!-- termina ilustración del artículo -->
+          </div>
+          <!-- Termina contenido del artículo -->
+
+          <footer>
+            <!-- Datos del autor -->
+            <div>
+              <span>Luis Hazael Flores</span>
+              <a href="https://www.instagram.com/hazael315/" target="_blank"
+                >@LuisHazaelFlores en Instagram</a
+              >
+            </div>
+            <!-- fin datos del autor -->
+            <!-- bibliografía -->
+            <blockquote>
+              <p></p>
             </blockquote>
             <!-- fin bibliografía -->
           </footer>
@@ -723,6 +773,61 @@
           >
         </div>
         <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>JAJAJA, buen meme</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>Increíble blog 😲</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>Siempre contenido nuevo, perfecto</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>Excelente atención a la comunidad</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
+        <!--  entrada de mircoblogging -->
+        <div>
+          <img
+            src="assets/images/user.png"
+            alt="autor"
+            width="60px"
+            height="auto"
+          />
+          <span>Esta información es FALSA, no es verdad</span>
+        </div>
+        <!-- termina entrada de mircoblogging -->
       </aside>
       <!-- Termina Barra Lateral -->
 
@@ -745,5 +850,33 @@
       <!-- Termina el footer -->
     </section>
     <!-- Termina mi blog -->
+
+    <div onclick="ScrollToTop()" class="ScrollTop" id="TopFunction">
+      Go to Top
+    </div>
+
+    <script>
+      function ScrollToTop() {
+        window.scrollTo(0, 0);
+      }
+
+      let mybutton = document.getElementById("TopFunction");
+
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          mybutton.style.display = "inline-block";
+          mybutton.style.opacity = "1";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>

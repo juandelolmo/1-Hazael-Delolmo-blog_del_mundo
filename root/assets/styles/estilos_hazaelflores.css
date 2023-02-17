@@ -1,3 +1,7 @@
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #000;
   color: #ffffff;
@@ -18,9 +22,9 @@ article {
 }
 
 #titulo_del_blog {
-  padding-top: 6rem;
+  padding-top: 8rem;
   text-align: center;
-  font-size: 3rem;
+  font-size: clamp(2rem, 1% + 2rem, 7rem);
 }
 
 .ilustracion {
@@ -123,11 +127,11 @@ section header {
 }
 
 main {
-  grid-column: span 8;
+  grid-column: span 12;
 }
 
 aside {
-  grid-column: span 4;
+  grid-column: span 12;
 }
 
 footer {
@@ -169,4 +173,74 @@ aside div {
 
 aside img {
   margin-left: 15px;
+}
+
+.ScrollTop {
+  opacity: 0.1;
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  border-radius: 1px solid #000;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.ScrollTop:hover {
+  background-color: greenyellow;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: auto;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+}
+
+aside div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.6rem;
+  border-bottom: 1px dashed #fff;
+}
+
+@media (min-width: 1100px) {
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 1024.1px) {
+  main {
+    grid-column: span 8;
+  }
+
+  aside {
+    grid-column: span 4;
+  }
+}
+
+@media (max-width: 1100px) {
+  #titulo_del_blog {
+    padding-top: 12rem;
+  }
+}
+
+@media (max-width: 1024.1px) {
+  aside div {
+    flex-direction: column;
+  }
+
+  #footer_blog {
+    flex-direction: column;
+  }
 }
