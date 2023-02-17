@@ -1,18 +1,16 @@
 body {
-  background-color: black;
+  background-color: #000;
   color: #ffffff;
-}
-nav ul li{
-  list-style: none;
-}
-
-nav ul li a{
-text-decoration: none;
+  margin: 0;
+  animation-name: efect_1;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
 }
 
 article {
   background-color: rgb(44, 43, 43);
-  border-bottom: solid, white, 1px;
+  border-bottom: solid #fff 1px;
+  padding: 1.5rem;
 }
 
 .resaltado {
@@ -20,15 +18,156 @@ article {
 }
 
 #titulo_del_blog {
+  padding-top: 6rem;
   text-align: center;
   font-size: 3rem;
 }
 
 .ilustracion {
-  border: solid, white, 4px;
+  border: solid #fff 4px;
   display: inline-block;
 }
 
-#footer_blog{
-  margin: 2rem;
+.ilustracion figcaption {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  font-style: italic;
 }
+
+#footer_blog {
+  margin: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem, 0;
+  font-size: 1.3rem;
+}
+
+#footer_blog div:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+nav {
+  font-size: 1.3rem;
+  position: fixed;
+  width: 100%;
+  background-color: #000;
+}
+
+.nav-bottom {
+  border-bottom: solid #fff 5px;
+  animation-name: efect_2;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 0.5rem;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: greenyellow;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+@keyframes efect_1 {
+  0% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes efect_2 {
+  0% {
+    transform: translate3d(-1500px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(0, 0px, 0px);
+  }
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  gap: 3rem;
+}
+
+section header {
+  grid-column: span 12;
+}
+
+main {
+  grid-column: span 8;
+}
+
+aside {
+  grid-column: span 4;
+}
+
+footer {
+  grid-column: span 12;
+}
+
+article header hgroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+article header hgroup h2 {
+  display: flex;
+  align-items: center;
+}
+
+article header hgroup h2 img {
+  margin-right: 1rem;
+}
+
+aside h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+aside div:nth-child(even) {
+  background-color: rgb(44, 43, 43);
+}
+
+aside div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  padding: 0.6rem;
+  border-bottom: 1px dashed #fff;
+}
+
+aside img {
+  margin-left: 15px;
+}
+
